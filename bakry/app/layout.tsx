@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Cairo } from "next/font/google"; // Import Cairo font
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const cairo = Cairo({ subsets: ["latin"] }); // Initialize Cairo font with the desired subset
 
 export const metadata: Metadata = {
   title: "Bakry Portfolio",
@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body className={cairo.className}> {/* Apply Cairo font class */}
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
