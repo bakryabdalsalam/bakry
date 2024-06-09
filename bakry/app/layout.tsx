@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Cairo } from "next/font/google"; // Import Cairo font
+import { Tajawal } from "next/font/google"; // Import Tajawal font
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-const cairo = Cairo({ subsets: ["latin"] }); // Initialize Cairo font with the desired subset
+const tajawal = Tajawal({ 
+  subsets: ["latin"], 
+  weight: ["200", "300", "400", "500", "700", "800", "900"] // Specify available font weights
+});
 
 export const metadata: Metadata = {
   title: "Bakry Portfolio",
@@ -18,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/jsm-logo.png" sizes="any" />
+        <link rel="icon" href="/bakry.png" sizes="any" />
       </head>
-      <body className={cairo.className}> {/* Apply Cairo font class */}
+      <body className={tajawal.className}> {/* Apply Tajawal font class */}
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
