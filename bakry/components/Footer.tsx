@@ -9,16 +9,15 @@ const Footer = () => {
       {/* background grid */}
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+          هل انت مستعد لجعل <span className="text-purple"> أفكارك </span>
+          ترى النور ؟
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+          انا هنا لمساعدتك في تحقيق أفكارك وتحويلها إلى واقع ملموس
         </p>
-        <a href="bakryabdalsalam6@gmail.com">
+        <a href="	https://wa.me/201018745573">
           <MagicButton
-            title="Let's get in touch"
+            title="تواصل معى الان"
             icon={<FaLocationArrow />}
             position="right"
           />
